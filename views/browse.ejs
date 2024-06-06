@@ -28,6 +28,8 @@
 
   <% if (locals.movieData) { %>
 
+    <% if (locals.movieData.Response === "True") { %>
+
     <div class="answer-container">
       <% if (locals.movieData.Title) { %>
       <p class="movieTitle"><%= movieData.Title %></p>
@@ -83,10 +85,11 @@
 
     </div>
     
+  </div>
+
   <% } %>
 
-
-  </div>
+  <% } %>
 
 
 </body>
